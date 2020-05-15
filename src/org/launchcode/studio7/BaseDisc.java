@@ -91,4 +91,17 @@ public abstract class BaseDisc {
     public void setId(String id) {
         this.id = id;
     }
+    //getting overridden by the DVD/CD classes
+    public void spinDisc() {
+        System.out.println("I like to spin between " + this.spinSpeedLowRangeRPM + " and " + this.spinSpeedHighRangeRPM + " RPMs.");
+    }
+    public void breakDisc() {
+        System.out.println("CD, DVD...we all break the same.");
+    }
+    public void coasterizeDisc() {
+        System.out.println("CD, DVD...we all make good coasters.");
+    }
+    public void playMedia() {
+        System.out.println("Enjoy playing your copy of " + this.id);
+    }
 }
